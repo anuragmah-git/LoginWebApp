@@ -13,7 +13,7 @@ pipeline {
 	                 }}
 		stage('Deployment'){
 		    steps {
-			   sh 'sshpass -p "dev" scp target/LoginWebApp.war dev@172.17.0.2:/home/dev/demo/apache-tomcat-8.5.35/webapps'
+			   sh 'sshpass -p "dev" scp target/LoginWebApp.war dev@172.17.0.3:/home/dev/demo/apache-tomcat-8.5.35/webapps'
 			}}
        		
 	}
